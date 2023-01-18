@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM mcr.microsoft.com/dotnet/sdk:latest
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 RUN apt-get update; apt-get install --yes openjdk-11-jre git
 RUN dotnet tool install --global dotnet-sonarscanner
